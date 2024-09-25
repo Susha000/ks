@@ -1,0 +1,146 @@
+/* Reset default margins and paddings */
+body, h1, h2, p, ul, li, img, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d9cee0;
+    color: #333333;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #bdcbd0;
+    color: #baa3a3;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    color: #ad91cf;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #b8d7da;
+    border-radius: 4px;
+}
+
+/* Main section styling */
+main {
+    margin-top: 20px;
+}
+
+/* Person section */
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.person p {
+    font-size: 1.2rem;
+}
+
+/* Info and Skills sections */
+.info, .skills {
+    margin-bottom: 20px;
+}
+
+.info h2, .skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+/* Essay section */
+.essay {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.essay h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .person {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .info, .skills {
+        text-align: center;
+        margin-left: 0;
+    }
+}
